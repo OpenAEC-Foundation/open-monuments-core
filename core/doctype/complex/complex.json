@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:complex_naam",
+ "creation": "2026-03-15 00:00:00.000000",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "complex_naam",
+  "provincie",
+  "omschrijving"
+ ],
+ "fields": [
+  {
+   "fieldname": "complex_naam",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Complexnaam",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "provincie",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Provincie",
+   "options": "\nDrenthe\nFlevoland\nFriesland\nGelderland\nGroningen\nLimburg\nNoord-Brabant\nNoord-Holland\nOverijssel\nUtrecht\nZeeland\nZuid-Holland"
+  },
+  {
+   "fieldname": "omschrijving",
+   "fieldtype": "Long Text",
+   "label": "Omschrijving"
+  }
+ ],
+ "links": [],
+ "modified": "2026-03-15 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Core",
+ "name": "Complex",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Monumentenwachter",
+   "share": 0,
+   "write": 1
+  }
+ ],
+ "sort_field": "complex_naam",
+ "sort_order": "ASC",
+ "states": [],
+ "track_changes": 1
+}

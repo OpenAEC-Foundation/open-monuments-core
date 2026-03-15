@@ -1,0 +1,243 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "MON-{YYYY}-{#####}",
+ "creation": "2026-03-15 00:00:00.000000",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "monument_naam",
+  "monument_nummer",
+  "foto_voorblad",
+  "column_break_basisinfo",
+  "categorie",
+  "subcategorie",
+  "status",
+  "complex",
+  "eigenaar",
+  "section_locatie",
+  "adres",
+  "postcode",
+  "plaats",
+  "provincie",
+  "column_break_locatie",
+  "bag_id",
+  "latitude",
+  "longitude",
+  "section_bouwhistorie",
+  "bouwperiode_start",
+  "bouwperiode_eind",
+  "column_break_bouwhistorie",
+  "architect",
+  "section_omschrijving",
+  "omschrijving",
+  "section_opmerkingen",
+  "opmerkingen"
+ ],
+ "fields": [
+  {
+   "fieldname": "monument_naam",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Monumentnaam",
+   "reqd": 1
+  },
+  {
+   "fieldname": "monument_nummer",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Monumentnummer (RCE)",
+   "unique": 1,
+   "description": "6-cijferig nummer uit het Rijksmonumentenregister"
+  },
+  {
+   "fieldname": "foto_voorblad",
+   "fieldtype": "Attach Image",
+   "label": "Voorblad foto"
+  },
+  {
+   "fieldname": "column_break_basisinfo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "categorie",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Categorie",
+   "options": "\nKerk\nWoonhuis\nMolen\nBoerderij\nKasteel\nToren\nBrug\nOverig",
+   "reqd": 1
+  },
+  {
+   "fieldname": "subcategorie",
+   "fieldtype": "Data",
+   "label": "Subcategorie"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Beschermingsstatus",
+   "options": "\nRijksmonument\nGemeentelijk monument\nBeschermd stadsgezicht",
+   "reqd": 1
+  },
+  {
+   "fieldname": "complex",
+   "fieldtype": "Link",
+   "label": "Complex",
+   "options": "Complex"
+  },
+  {
+   "fieldname": "eigenaar",
+   "fieldtype": "Link",
+   "in_list_view": 0,
+   "label": "Eigenaar",
+   "options": "Eigenaar"
+  },
+  {
+   "fieldname": "section_locatie",
+   "fieldtype": "Section Break",
+   "label": "Locatie"
+  },
+  {
+   "fieldname": "adres",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Adres"
+  },
+  {
+   "fieldname": "postcode",
+   "fieldtype": "Data",
+   "label": "Postcode"
+  },
+  {
+   "fieldname": "plaats",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Plaats"
+  },
+  {
+   "fieldname": "provincie",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Provincie",
+   "options": "\nDrenthe\nFlevoland\nFriesland\nGelderland\nGroningen\nLimburg\nNoord-Brabant\nNoord-Holland\nOverijssel\nUtrecht\nZeeland\nZuid-Holland"
+  },
+  {
+   "fieldname": "column_break_locatie",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bag_id",
+   "fieldtype": "Data",
+   "label": "BAG-identificatie",
+   "description": "Basisregistratie Adressen en Gebouwen identificatienummer"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Float",
+   "label": "Breedtegraad (lat)",
+   "precision": "8",
+   "description": "WGS84-coördinaat"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Float",
+   "label": "Lengtegraad (lon)",
+   "precision": "8",
+   "description": "WGS84-coördinaat"
+  },
+  {
+   "fieldname": "section_bouwhistorie",
+   "fieldtype": "Section Break",
+   "label": "Bouwhistorie"
+  },
+  {
+   "fieldname": "bouwperiode_start",
+   "fieldtype": "Int",
+   "label": "Bouwperiode — beginjaar",
+   "description": "Jaar van aanvang bouw"
+  },
+  {
+   "fieldname": "bouwperiode_eind",
+   "fieldtype": "Int",
+   "label": "Bouwperiode — eindjaar",
+   "description": "Jaar van voltooiing bouw"
+  },
+  {
+   "fieldname": "column_break_bouwhistorie",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "architect",
+   "fieldtype": "Data",
+   "label": "Architect"
+  },
+  {
+   "fieldname": "section_omschrijving",
+   "fieldtype": "Section Break",
+   "label": "Omschrijving"
+  },
+  {
+   "fieldname": "omschrijving",
+   "fieldtype": "Long Text",
+   "label": "Monumentomschrijving",
+   "description": "Historische en architectonische beschrijving"
+  },
+  {
+   "fieldname": "section_opmerkingen",
+   "fieldtype": "Section Break",
+   "label": "Opmerkingen"
+  },
+  {
+   "fieldname": "opmerkingen",
+   "fieldtype": "Text",
+   "label": "Opmerkingen"
+  }
+ ],
+ "links": [],
+ "modified": "2026-03-15 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Core",
+ "name": "Monument",
+ "naming_rule": "Expression (old-style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Monumentenwachter",
+   "share": 0,
+   "write": 1
+  }
+ ],
+ "search_fields": "monument_naam,monument_nummer,adres,plaats",
+ "sort_field": "monument_naam",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "monument_naam",
+ "track_changes": 1
+}

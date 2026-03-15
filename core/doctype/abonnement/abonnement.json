@@ -1,0 +1,141 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "ABO-{YYYY}-{#####}",
+ "creation": "2026-03-15 00:00:00.000000",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "eigenaar",
+  "monument",
+  "column_break_basis",
+  "abonnement_type",
+  "status",
+  "section_periode",
+  "startdatum",
+  "einddatum",
+  "column_break_periode",
+  "prijs_per_jaar",
+  "section_opmerkingen",
+  "opmerkingen"
+ ],
+ "fields": [
+  {
+   "fieldname": "eigenaar",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Eigenaar",
+   "options": "Eigenaar",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "monument",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Monument",
+   "options": "Monument",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_basis",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "abonnement_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Abonnementstype",
+   "options": "Basis\nStandaard\nPlus",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Actief\nGepauzeerd\nOpgezegd\nProef",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_periode",
+   "fieldtype": "Section Break",
+   "label": "Abonnementsperiode"
+  },
+  {
+   "fieldname": "startdatum",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Startdatum"
+  },
+  {
+   "fieldname": "einddatum",
+   "fieldtype": "Date",
+   "label": "Einddatum"
+  },
+  {
+   "fieldname": "column_break_periode",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prijs_per_jaar",
+   "fieldtype": "Currency",
+   "label": "Prijs per jaar (€)",
+   "options": "EUR"
+  },
+  {
+   "fieldname": "section_opmerkingen",
+   "fieldtype": "Section Break",
+   "label": "Opmerkingen"
+  },
+  {
+   "fieldname": "opmerkingen",
+   "fieldtype": "Text",
+   "label": "Opmerkingen"
+  }
+ ],
+ "links": [],
+ "modified": "2026-03-15 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Core",
+ "name": "Abonnement",
+ "naming_rule": "Expression (old-style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Monumentenwachter",
+   "share": 0,
+   "write": 1
+  }
+ ],
+ "search_fields": "eigenaar,monument",
+ "sort_field": "startdatum",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

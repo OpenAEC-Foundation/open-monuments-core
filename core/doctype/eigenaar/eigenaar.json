@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:eigenaar_naam",
+ "creation": "2026-03-15 00:00:00.000000",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "eigenaar_naam",
+  "type",
+  "column_break_contact",
+  "email",
+  "telefoon",
+  "section_adres",
+  "adres",
+  "postcode",
+  "plaats",
+  "column_break_adres",
+  "opmerkingen"
+ ],
+ "fields": [
+  {
+   "fieldname": "eigenaar_naam",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Naam eigenaar",
+   "reqd": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Type eigenaar",
+   "options": "Particulier\nOrganisatie\nKerk\nGemeente\nProvincie\nRijk\nOverig",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_contact",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "E-mailadres",
+   "options": "Email"
+  },
+  {
+   "fieldname": "telefoon",
+   "fieldtype": "Data",
+   "label": "Telefoonnummer",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "section_adres",
+   "fieldtype": "Section Break",
+   "label": "Adresgegevens"
+  },
+  {
+   "fieldname": "adres",
+   "fieldtype": "Data",
+   "in_list_view": 0,
+   "label": "Adres"
+  },
+  {
+   "fieldname": "postcode",
+   "fieldtype": "Data",
+   "label": "Postcode"
+  },
+  {
+   "fieldname": "plaats",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plaats"
+  },
+  {
+   "fieldname": "column_break_adres",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "opmerkingen",
+   "fieldtype": "Text",
+   "label": "Opmerkingen"
+  }
+ ],
+ "links": [],
+ "modified": "2026-03-15 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Core",
+ "name": "Eigenaar",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Monumentenwachter",
+   "share": 0,
+   "write": 1
+  }
+ ],
+ "sort_field": "eigenaar_naam",
+ "sort_order": "ASC",
+ "states": [],
+ "track_changes": 1
+}

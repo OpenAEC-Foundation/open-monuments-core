@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2026-03-15 00:00:00.000000",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bouwdeel_naam",
+  "monument",
+  "column_break_basis",
+  "soort",
+  "actief",
+  "volgorde",
+  "section_nlsfb",
+  "nlsfb_code",
+  "nlsfb_omschrijving",
+  "column_break_nlsfb",
+  "materiaal",
+  "oppervlak_m2"
+ ],
+ "fields": [
+  {
+   "fieldname": "bouwdeel_naam",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Bouwdeelnaam",
+   "reqd": 1
+  },
+  {
+   "fieldname": "monument",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Monument",
+   "options": "Monument",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_basis",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "soort",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Soort bouwdeel",
+   "options": "\nDak\nGevel\nFundering\nVloer\nTrap\nPlafond\nKozijn\nDeur\nInstallatie\nOverig"
+  },
+  {
+   "default": "1",
+   "fieldname": "actief",
+   "fieldtype": "Check",
+   "label": "Actief"
+  },
+  {
+   "fieldname": "volgorde",
+   "fieldtype": "Int",
+   "label": "Volgorde",
+   "description": "Sorteervolgorde in de inspectienavigatie"
+  },
+  {
+   "fieldname": "section_nlsfb",
+   "fieldtype": "Section Break",
+   "label": "NL-SfB codering"
+  },
+  {
+   "fieldname": "nlsfb_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "NL-SfB code",
+   "description": "Codering conform NL-SfB elementenmethode (bijv. 23, 27, 43)"
+  },
+  {
+   "fieldname": "nlsfb_omschrijving",
+   "fieldtype": "Data",
+   "label": "NL-SfB omschrijving"
+  },
+  {
+   "fieldname": "column_break_nlsfb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "materiaal",
+   "fieldtype": "Data",
+   "label": "Primair materiaal",
+   "description": "Hoofdmateriaal van dit bouwdeel (bijv. Baksteen, Natuursteen, Hout)"
+  },
+  {
+   "fieldname": "oppervlak_m2",
+   "fieldtype": "Float",
+   "label": "Oppervlak (m²)",
+   "precision": "2"
+  }
+ ],
+ "links": [],
+ "modified": "2026-03-15 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Core",
+ "name": "Bouwdeel",
+ "naming_rule": "Prompt",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Monumentenwachter",
+   "share": 0,
+   "write": 1
+  }
+ ],
+ "search_fields": "bouwdeel_naam,monument,nlsfb_code",
+ "sort_field": "volgorde",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "bouwdeel_naam",
+ "track_changes": 1
+}
