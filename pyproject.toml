@@ -3,7 +3,7 @@ requires = ["flit_core >=3.4,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "core"
+name = "monuments_core"
 authors = [
     {name = "OpenAEC Foundation", email = "info@openaec.org"}
 ]

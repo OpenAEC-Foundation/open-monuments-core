@@ -4,7 +4,7 @@ with open("requirements.txt") as f:
     install_requires = f.read().strip().split("\n")
 
 setup(
-    name="core",
+    name="monuments_core",
     version="0.1.0",
     description="Open-Monuments Core — Monumentenregister Frappe-app",
     author="OpenAEC Foundation",

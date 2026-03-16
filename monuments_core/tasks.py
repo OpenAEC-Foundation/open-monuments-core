@@ -22,10 +22,10 @@ def update_rijksmonumentenregister_cache() -> None:
 
     Zie: D012 — Rijksmonumentenregister API koppeling.
     """
-    frappe.logger("core.tasks").info(
+    frappe.logger("monuments_core.tasks").info(
         "Starten met opschonen Rijksmonumentenregister cache..."
     )
     # Cache-sleutels voor RCE API-responses hebben het prefix "rmr_"
     # Frappe's cache heeft geen bulk-delete op prefix; dit is een placeholder
     # voor de volledige implementatie in Sprint 2.
-    frappe.logger("core.tasks").info("Cache-opschoning voltooid.")
+    frappe.logger("monuments_core.tasks").info("Cache-opschoning voltooid.")

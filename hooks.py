@@ -1,4 +1,4 @@
-app_name = "core"
+app_name = "monuments_core"
 app_title = "Open-Monuments Core"
 app_publisher = "OpenAEC Foundation"
 app_description = "Monumentenregister: centrale database voor monument-, bouwdeel- en abonnementenbeheer."
@@ -20,14 +20,14 @@ fixtures = [
     },
     {
         "dt": "Custom Field",
-        "filters": [["module", "=", "Core"]],
+        "filters": [["module", "=", "Monuments Core"]],
     },
 ]
 
 # Frappe scheduler-taken
 scheduler_events = {
     "daily": [
-        "core.core.tasks.update_rijksmonumentenregister_cache",
+        "monuments_core.monuments_core.tasks.update_rijksmonumentenregister_cache",
     ],
 }
 
