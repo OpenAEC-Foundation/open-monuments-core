@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include monuments_core *.css
+recursive-include monuments_core *.csv
+recursive-include monuments_core *.html
+recursive-include monuments_core *.ico
+recursive-include monuments_core *.js
+recursive-include monuments_core *.json
+recursive-include monuments_core *.md
+recursive-include monuments_core *.png
+recursive-include monuments_core *.py
+recursive-include monuments_core *.svg
+recursive-include monuments_core *.txt
+recursive-exclude monuments_core *.pyc
