@@ -32,7 +32,8 @@
    "in_standard_filter": 1,
    "label": "Bouwdeel",
    "options": "Bouwdeel",
-   "reqd": 1,
+   "reqd": 0,
+   "description": "Optioneel: koppel aan specifiek bouwdeel, of laat leeg voor bibliotheek-element",
    "search_index": 1
   },
   {
