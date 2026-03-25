@@ -50,7 +50,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Soort bouwdeel",
-   "options": "\nDak\nGevel\nFundering\nVloer\nTrap\nPlafond\nKozijn\nDeur\nInstallatie\nOverig"
+   "options": "\nDak\nGevel\nInterieur\nFundering\nVloer\nTrap\nPlafond\nKozijn\nDeur\nInstallatie\nOverig"
   },
   {
    "default": "1",
