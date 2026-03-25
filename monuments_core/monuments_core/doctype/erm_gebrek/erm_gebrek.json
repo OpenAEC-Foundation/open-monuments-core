@@ -38,7 +38,7 @@
   },
   {
    "fieldname": "naam",
-   "fieldtype": "Data",
+   "fieldtype": "Small Text",
    "in_list_view": 1,
    "label": "Naam",
    "reqd": 1,
