@@ -1,7 +1,8 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "prompt",
+ "autoname": "hash",
+ "naming_rule": "Random",
  "creation": "2026-03-15 00:00:00.000000",
  "doctype": "DocType",
  "document_type": "Document",
