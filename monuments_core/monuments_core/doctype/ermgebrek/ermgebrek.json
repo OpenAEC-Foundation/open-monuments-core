@@ -1,0 +1,188 @@
+{
+ "actions": [],
+ "autoname": "field:code",
+ "creation": "2026-03-25 00:00:00.000000",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "code",
+  "naam",
+  "hoofdgroep",
+  "hoofdgroep_naam",
+  "bouwdeel_code",
+  "bouwdeel_naam",
+  "ernst",
+  "subcategorie",
+  "beschrijving",
+  "nlsfb_code",
+  "nen2767_code",
+  "section_conditieomschrijving",
+  "conditie_1",
+  "conditie_2",
+  "conditie_3",
+  "conditie_4",
+  "conditie_5",
+  "conditie_6"
+ ],
+ "fields": [
+  {
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Code",
+   "reqd": 1,
+   "unique": 1,
+   "description": "Unieke gebrekcode, bijv. A1.161003-ernstig-1"
+  },
+  {
+   "fieldname": "naam",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Naam",
+   "reqd": 1,
+   "description": "Omschrijving van het gebrektype"
+  },
+  {
+   "fieldname": "hoofdgroep",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Hoofdgroep",
+   "options": "A1\nA2\nA3\nA4\nA5\nA6\nA7\nA8\nA9\nA10\nA11\nC5"
+  },
+  {
+   "fieldname": "hoofdgroep_naam",
+   "fieldtype": "Data",
+   "label": "Hoofdgroep naam",
+   "description": "Bijv. Casco, constructies, funderingen"
+  },
+  {
+   "fieldname": "bouwdeel_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bouwdeel code",
+   "description": "Bijv. A1.161003"
+  },
+  {
+   "fieldname": "bouwdeel_naam",
+   "fieldtype": "Data",
+   "label": "Bouwdeel naam",
+   "description": "Bijv. Funderingen metselwerk"
+  },
+  {
+   "fieldname": "ernst",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Ernst",
+   "options": "ernstig\nserieus\ngering",
+   "reqd": 1
+  },
+  {
+   "fieldname": "subcategorie",
+   "fieldtype": "Data",
+   "label": "Subcategorie",
+   "description": "Bijv. werking_primair"
+  },
+  {
+   "fieldname": "beschrijving",
+   "fieldtype": "Small Text",
+   "label": "Beschrijving",
+   "reqd": 1,
+   "description": "Volledige omschrijving van het gebrek"
+  },
+  {
+   "fieldname": "nlsfb_code",
+   "fieldtype": "Data",
+   "label": "NL-SfB code",
+   "description": "NL-SfB referentiecode"
+  },
+  {
+   "fieldname": "nen2767_code",
+   "fieldtype": "Data",
+   "label": "NEN 2767 code",
+   "description": "NEN 2767 referentiecode"
+  },
+  {
+   "fieldname": "section_conditieomschrijving",
+   "fieldtype": "Section Break",
+   "label": "Conditieomschrijving"
+  },
+  {
+   "fieldname": "conditie_1",
+   "fieldtype": "Text",
+   "label": "Conditie 1 - Uitstekend",
+   "description": "Uitstekend: geen gebreken"
+  },
+  {
+   "fieldname": "conditie_2",
+   "fieldtype": "Text",
+   "label": "Conditie 2 - Goed",
+   "description": "Goed: geringe gebreken"
+  },
+  {
+   "fieldname": "conditie_3",
+   "fieldtype": "Text",
+   "label": "Conditie 3 - Redelijk",
+   "description": "Redelijk: beginnende veroudering"
+  },
+  {
+   "fieldname": "conditie_4",
+   "fieldtype": "Text",
+   "label": "Conditie 4 - Matig",
+   "description": "Matig: zichtbare veroudering"
+  },
+  {
+   "fieldname": "conditie_5",
+   "fieldtype": "Text",
+   "label": "Conditie 5 - Slecht",
+   "description": "Slecht: ernstige veroudering"
+  },
+  {
+   "fieldname": "conditie_6",
+   "fieldtype": "Text",
+   "label": "Conditie 6 - Zeer slecht",
+   "description": "Zeer slecht: gevorderde veroudering of falen"
+  }
+ ],
+ "links": [],
+ "modified": "2026-03-25 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Monuments Core",
+ "name": "Erm Gebrek",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 0,
+   "delete": 0,
+   "email": 0,
+   "export": 1,
+   "print": 0,
+   "read": 1,
+   "report": 1,
+   "role": "Monumentenwachter",
+   "share": 0,
+   "write": 0
+  }
+ ],
+ "search_fields": "naam,bouwdeel_naam,hoofdgroep,nlsfb_code",
+ "show_title_field_in_link": 1,
+ "sort_field": "code",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "naam",
+ "track_changes": 1
+}
